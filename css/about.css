@@ -1,0 +1,254 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+ html::-webkit-scrollbar{
+  display: none;
+   } 
+
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+/* 关于我们 */
+.aboutwe{
+    width: 1000px;
+    height: 900px;
+    clear: both;
+    margin: 0 auto;
+}
+.aboutwe .aboutwe_left{
+    width:450px;
+    float: left;
+}
+.aboutwe .lines{
+    height: 210px;
+    border: 1px solid #e8eae7;
+    display: inline-block;
+}
+.aboutwe_left h2{
+    text-align: left;
+    font-weight: normal;
+    margin-bottom: 15px;
+    margin-top: 25px;
+}
+.aboutwe_left span.aboutus{
+    color: #716e6e;
+    font-size: 14px;
+}
+.aboutwe_left span.dot{
+    display: inline-block;
+    width:7px;
+    height: 7px;
+    background: red;
+    margin-left: 10px;
+}
+.aboutwe_left p{
+    text-indent: 1em;
+    color: #3e3e3e;
+    line-height: 25px;
+    margin-top: 34px;
+    margin-bottom: 25px;
+}
+.aboutwe_right{
+    float: right;
+    vertical-align: middle;
+    margin-top: 135px;
+}
+/* 分会介绍 */
+.introduce{
+    width: 100%;
+    height: 600px;
+    background: url(../images/introduce_bg.png) no-repeat;
+}
+.introduce_box{
+    width: 1260px;
+    height: 400px;
+    margin: 0 auto;
+}
+.introduce_title{
+    width: 1260px;
+    position: relative;
+    text-align: center;
+    padding-top: 65px;
+}
+.introduce_title span.line_left,span.line_right{
+    width: 420px;
+    border:1px solid #e8eae7;
+    display:inline-block;
+    position: absolute;
+    top: 92px;
+}
+.introduce_title span.line_left{
+    right: 5px;
+}
+.introduce_title span.line_right{
+    left: 5px;
+}
+.introduce_title h2{
+    font-weight: normal;
+    color: #484646;
+    margin-bottom: 5px;
+}
+.introduce_title span.dot{
+    width: 7px;
+    height: 7px;
+    background: red;
+    margin:0 auto;
+    display: block;
+    margin-top: 15px;
+}
+.introduce_title p{
+    color: #716e6e;
+}
+/* 小轮播 */
+
+.carousel .img-ct img {
+    width: 380px;
+    height: 250px;
+    margin: 0 16px 0 16px;
+}
+.carousel .img-ct {
+    width:3780px;
+    position: absolute;
+    overflow: hidden;
+}
+.carousel .img-ct li {
+    float: left;
+}
+.carousel {
+    position: relative;
+    width: 1260px;
+    height: 250px;
+    overflow: hidden;
+}
+/* 小按钮 */
+.carousel_box .bullet {
+    position: absolute;
+    width: 100%;
+    bottom: 10px;
+    text-align: center;
+  }
+.bullet >li {
+    display: inline-block;
+    width: 30px;
+    height: 5px;
+    border: 1px solid #c7c9c8;
+    border-radius: 4px;
+    background: #c7c9c8;
+    cursor: pointer;
+    font-size: 0;
+  }
+ .bullet >li.active {
+    background-color: #fa601a;
+  }
+  .carousel_box{
+    width: 1260px;
+    height: 350px;
+    margin: 0 auto;
+    position: relative;
+    margin-top: 35px;
+}
+.carousel_box ul{
+    left: 0;
+}
+.sty{
+    transition: all 0.3s;
+}
+.transiti{
+    transition: all 0.6s;
+}
+  /* 协会文化 */
+  .culture{
+    width: 100%;
+    height: 741px;
+    margin: 0 auto;
+    background: #f5f5f5;
+}
+.cultur_left{
+    float: left;
+}
+.cultur_right{
+    width: 600px;
+    float: left;
+    margin-left: 80px;
+}
+.cultur_right h2{
+    text-align: left;
+    font-weight: normal;
+    margin-bottom: 15px;
+    padding-top: 65px;
+}
+.cultur_right span.aboutus{
+    color: #716e6e;
+    font-size: 14px;
+}
+.cultur_right span.dot{
+    display: inline-block;
+    width:7px;
+    height: 7px;
+    background: red;
+    margin-left: 10px;
+}
+.cultur_right p{
+    text-indent: 1em;
+    color: #3e3e3e;
+    line-height: 25px;
+    margin-top: 35px;
+}
+/* 协会架构 */
+.framework{
+    width: 1260px;
+    margin: 0 auto;
+    margin-top: 35px;
+    clear: both;
+}
+.introduce_box{
+    margin-top: 55px;
+}
+.introduce_box .detail{
+    width: 600px;
+    float: left;
+}
+.introduce_box .detail p{
+    line-height: 30px;
+}
+.introduce_box .introduce{
+    width: 90%;
+    float: right;
+}
+.introduce_box p{
+    color: #565656;
+}
+/* 协会荣誉 */
+.honor{
+    width: 100%;
+    height: 670px;
+    background: #f5f5f5;
+}
+.honor_box{
+    width: 1260px;
+    height: 670px;
+    margin: 0 auto;
+}
+.honor_content{
+    clear: both;
+    margin-top: 55px;
+}
+.honor_content ul li{
+    width: 315px;
+    float: left;
+    margin: 0 auto;
+    vertical-align: middle;
+    text-align: center;
+}
+.honor_content ul li p:nth-child(2) img{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.honor_content ul li p:nth-child(3){
+    color: #716E6E;
+}

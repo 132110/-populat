@@ -1,0 +1,108 @@
+
+*{ margin: 0; padding: 0; list-style: none;}
+.contributions{
+    width: 1260px;
+    margin: 0 auto;
+    margin-top: 35px;
+}
+.chead{
+    position: relative;
+    width: 100%;
+    text-align: center;
+}
+.chead h2{
+    margin: 0 auto;
+    width: 120px;
+    padding-bottom: 15px;
+}
+.chead p{
+    width: 370px;
+    position: absolute;
+    top: 17px;
+    border: 1px solid #b3c4cc;
+}
+.p1{
+    left: 170px;
+}
+.p2{
+    left: 695px;
+}
+.chead span{
+    color: #b3c4cc;
+
+    width: 120px;
+    text-align: center;
+}
+.chead .dot{
+    width: 7px;
+    height: 7px;
+    background: red;
+    margin:0 auto;
+    display: block;
+    margin-top: 15px;
+}
+.news{
+    position: relative;
+    width: 1260px;
+    height: 1200px;
+    margin-top: 60px;
+    background: url("../images/news_bg.png");
+
+}
+.midline{
+    position: absolute;
+    left: 615px;
+    top: 0;
+}
+.midline p{
+    position: absolute;
+    width: 28px;
+    height: 28px;
+    background: url("../images/time_icon.png");
+    left: 0;
+    top: 0;
+}
+.midline div{
+    position: absolute;
+    height: 200px;
+    border-left:1px solid #ff6537 ;
+    left: 14px;
+
+}
+.midline span{
+    position: absolute;
+    display: inline-block;
+    width: 21px;
+    height: 21px;
+    background: url("../images/time_point.png");
+    left: 4px;
+}
+.midline i{
+    position: absolute;
+    display: inline-block;
+    width: 100px;
+    color: #ff6537;
+    font-style: normal;
+}
+.medol{
+    width: 440px;
+    padding: 0 20px 40px 20px;
+    background: #f5f5f5;
+    position: absolute;
+
+}
+.medol h3{
+    margin:20px 0;
+}
+.medol p{
+    line-height: 30px;
+    margin-bottom: 30px;
+
+}
+.medol a{
+    color: #ff6537;
+    text-decoration: none;
+    display: inline-block;
+    position: absolute;
+    right: 15px;
+}

@@ -1,0 +1,89 @@
+/* 公共部分 */
+*{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+/* 联系我们 */
+.concats{
+    width: 1260px;
+    margin: 0 auto;
+    margin-top: 117px;
+    margin-bottom: 111px;
+}
+/* 标题 */
+.concats_title{
+    width: 1260px;
+    position: relative;
+    text-align: center;
+}
+.concats_title span.line_left,span.line_right{
+    width: 500px;
+    border:1px solid grey;
+    display:inline-block;
+    position: absolute;
+    top: 25px;
+}
+.concats_title span.line_left{
+    right: 5px;
+}
+.concats_title span.line_right{
+    left: 5px;
+}
+.concats_title h2{
+    font-weight: normal;
+}
+.concats_title span.dot{
+    width: 6px;
+    height: 6px;
+    background: red;
+    margin:0 auto;
+    display: block;
+    margin-top: 15px;
+}
+/* 位置 */
+.location{
+    margin-top: 45px;
+    width: 1260px;
+    height: 439px;
+}
+.location #allmap,.word{
+    width: 475px;
+    height: 300px;
+    float: left;
+}
+.location .location_right{
+    width: 475px;
+    height: 300px;
+    float: right;
+}
+.location .location_right ul li img{
+    margin-right: 25px;
+    vertical-align: middle;
+}
+.location .location_right ul li{
+    /* font-size: 12px; */
+    color: #3d3c3c;
+    line-height: 45px;
+}
+.c_project{
+    height: 300px;
+    margin-top: 62px;
+    margin-bottom: 65px;
+    clear: both;
+}
+.pic img{
+    width: 475px;
+    height: 300px;
+    float: right;
+}
+.c_project  p{
+    color: #585757;
+    text-indent: 1em;
+    line-height: 35px;
+}

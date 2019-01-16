@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        a {
+            text-decoration: none;
+        }
+
+        li {
+            list-style: none;
+        }
+        /* 头部 */
+        .header{
+            width: 1260px;
+            height: 65px;
+            margin: 15px auto;
+            margin-bottom: 15px;
+        }
+        .header .logo{
+            width: 398px;
+            float: left;
+        }
+        .nav{
+            width: 730px;
+            float: left;
+            margin-left: 35px;
+        }
+        .nav ul li{
+            width: 100px;
+            float: left;
+            line-height: 65px;
+            text-align: center;
+        }
+        .nav ul li a{
+            font-size: 16px;
+            color: #484747;
+        }
+        .nav ul li:hover{
+            border-bottom: 3px solid #f94e1a;
+
+        }
+        .LoginRegist{
+            float: left;
+            width: 95px;
+            height: 29px;
+            line-height: 29px;
+            text-align: center;
+            margin-top: 18px;
+            background-image: url(../images/796443419328412998.png);
+        }
+        .LoginRegist a{
+            color: #484747;
+        }
+        /* 轮播 */
+        .lunbobox{
+            width: 100%;
+            overflow: hidden;
+            position: relative;
+        }
+        .lunbo1{
+            width: 300%;
+            height: 100%;
+            margin-left: 0px;
+        }
+        .hosiptalshow{
+            width: 1260px;
+            margin: 0 auto;
+            overflow: hidden;
+        }
+        .hosiptalshow ul{
+            float: left;
+            width: 20%;
+            overflow: hidden;
+        }
+
+        #hosiptalshow ul{
+            overflow: hidden;
+        }
+        .hosiptalshow ul li{
+            position: relative;
+            margin: 65px 0 75px 0;
+            transform: scale(0.5);
+            float: left;
+            width: 25%;
+            text-align: center;
+        }
+        .lunbo1 .banner{
+            float: left;
+        }
+        .banner {
+            width: 33%;
+            margin-left:7px;
+            position: relative;
+        }
+        .banner .backg {
+            width: 100%;
+            vertical-align: middle;
+        }
+        .donation{
+            position: absolute;
+            top: 60%;
+            left: 26%;
+        }
+        .xg{
+            transition: all 2s;
+            -moz-transition: all 2s;
+            -webkit-transition: all 2s;
+            -o-transition: all 2s;
+        }
+    </style>
+</head>
+<body>
+<div id="part1" class="part">
+    <div class="header">
+        <div class="logo">
+            <img src="../images/logo.png" alt="">
+        </div>
+        <div class="nav">
+            <ul>
+                <li><a href="../index.html">首页</a></li>
+                <li><a href="about.html">关于我们</a></li>
+                <li><a href="project.html">项目介绍</a></li>
+                <li><a href="application.html">项目申请</a></li>
+                <li><a href="contribution.html">我要捐款</a></li>
+                <li><a href="news.html">申请合作</a></li>
+                <li><a href="concat.html">联系我们</a></li>
+            </ul>
+        </div>
+        <!-- 登录注册 -->
+        <div class="LoginRegist">
+            <a href="javascript:;">登录 / 注册</a>
+        </div>
+    </div>
+    <!-- 轮播 -->
+    <div class="lunbobox">
+        <div class="lunbo1 xg" id="lbox">
+            <div class="banner">
+                <img src="../images/banner.png" class="backg" alt="">
+                <a href="javascript:;" class="donation"><img src="../images/contribution_btn.png" alt=""></a>
+            </div>
+            <div class="banner">
+                <img src="../images/banner.png" class="backg" alt="">
+                <a href="javascript:;" class="donation"><img src="../images/contribution_btn.png" alt=""></a>
+            </div>
+            <div class="banner">
+                <img src="../images/banner.png" class="backg" alt="">
+                <a href="javascript:;" class="donation"><img src="../images/contribution_btn.png" alt=""></a>
+            </div>
+        </div>
+        <!-- 小圆点 -->
+        <div class="controls" id="controls">
+            <span class="currents"></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+</div>
+</body>
+<script src="../lib/jquery-1.8.3.min.js"></script>
+<script>
+    $(function(){
+        var oBox1=document.getElementById("lbox");
+        var oControls=document.getElementById("controls");
+        var aSpan=oControls.getElementsByTagName("span");
+        var aBnner=oBox1.getElementsByClassName("banner");
+        var oSpan=document.getElementById("number");
+        var n=0;
+        var timer=setInterval(gun,2500);
+        oBox1.onmouseover=function(){
+            clearInterval(timer);
+        }
+        oBox1.onmouseout=function(){
+            timer=setInterval(gun,2500);
+        }
+        function  gun(){
+            n++;
+            oBox1.className="lunbo1 xg";
+            var nh=0;
+            if(n==3){
+                n=0;
+                oBox1.className="lunbo1";
+            }
+
+            for(var k=0;k<n;k++){
+                nh+=aBnner[k].offsetWidth;
+            }
+            for(var y=0;y<aSpan.length;y++){
+                aSpan[y].className="";
+            }
+            aSpan[n].className="currents";
+            oBox1.style.marginLeft=-nh+(-n*7)+"px";
+        }
+    })
+</script>
+</html>

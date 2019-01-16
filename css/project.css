@@ -1,0 +1,154 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+ span.dot{
+    width: 7px;
+    height: 7px;
+    background: red;
+    margin:0 auto;
+    margin-top: 15px;
+    display: inline-block;
+}
+.project{
+    width: 100%;
+    height: 600px;
+    background: url(../images/introduce_bg.png) no-repeat;
+}
+.project_box{
+    width: 1260px;
+    height: 600px;
+    margin: 0 auto;
+}
+.project_title{
+    width: 1260px;
+    position: relative;
+    text-align: center;
+    padding-top: 65px;
+}
+.project_title span.line_left,span.line_right{
+    width: 420px;
+    border:1px solid #e8eae7;
+    display:inline-block;
+    position: absolute;
+    top: 92px;
+}
+.project_title span.line_left{
+    right: 25px;
+}
+.project_title span.line_right{
+    left: 25px;
+}
+.project_title h2{
+    font-weight: normal;
+    color: #484646;
+    margin-bottom: 5px;
+}
+.project_title span.dot{
+    display: block;
+}
+.project_title p{
+    color: #716e6e;
+}
+.project_content{
+    clear: both;
+    margin-top: 45px;
+}
+.project_content ul li{
+    width: 315px;
+    text-align: center;
+    vertical-align: middle;
+    float: left;
+}
+.project_content ul li h3 {
+   line-height: 45px;
+   margin-top: 25px;
+}
+.project_content ul li img:nth-child(2){
+    margin-bottom: 25px;
+}
+.project_content ul li p{
+    text-align: left;
+    line-height: 25px;
+    width: 238px;
+    height: 50px;
+    margin: 0 auto;
+    font-size: 14px;
+    color: #656565;
+    vertical-align: middle;
+}
+/* 项目介绍 */
+.project_detail{
+    width: 1260px;
+    height: 985px;
+    margin: 0 auto;
+    margin-top: 35px;
+}
+.project_biaoti h2{
+    text-align: left;
+    font-weight: normal;
+    line-height: 35px;
+}
+.project_biaoti span.introd{
+    font-size: 14px;
+    color: #716e6e;
+}
+.project_biaoti .dot{
+    margin-left: 10px;
+}
+/* 项目介绍内容 */
+.project_contents{
+    clear: both;
+    width: 1260px;
+    height: 700px;
+}
+.project_contents ul {
+    width: 1260px;
+    height: 800px;
+    margin-top: 65px;
+}
+.project_contents .noleft{
+    margin-left: 0;
+}
+.project_contents ul li{
+    width: 246px;
+    text-align: center;
+    vertical-align: middle;
+    float: left;
+    margin-left:35px;
+    margin-top: 35px;
+}
+.project_contents ul li:nth-child(1){
+    margin-left: 0px;
+}
+.project_contents ul li p:nth-child(2){
+    line-height: 35px;
+}
+.project_contents ul li p:nth-child(3){
+    color: #716e6e;
+}
+.project_contents ul li .dontate{
+    width: 246px;
+    height: 45px;
+    font-size: 12px;
+    border:1px solid #ff6537;
+    color: #ff6537;
+    text-align: center;
+    line-height: 45px;
+    margin-top: 35px;
+}
+.project_contents ul li .dontate img{
+    vertical-align: middle;
+}
+.project_contents ul li .dontate a{
+    color: #ff6537;
+    font-size: 16px;
+    vertical-align: middle;
+    margin-left: 5px;
+}

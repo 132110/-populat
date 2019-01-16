@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+   <link rel="stylesheet" href="../css/concat.css">
+   <link rel="stylesheet" href="../lib/swiper.min.css">
+    <link rel="stylesheet" href="../css/index.css">
+    <script src="../lib/jquery-1.8.3.min.js"></script>
+    <script src="../lib/swiper.min.js"></script>
+    <script src="../js/public.js"></script>
+    <script src="../data/concat/concatinfo.js"></script>
+    <script src="../js/concatData.js"></script>
+   <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=7VENmCeC4aaAfx3CKbSjT1K3oRucOgDK"></script>
+</head>
+<body>
+<div id="part1" class="part">
+    <div class="header clearfix" style="height:116px;">
+    <div class="logo" style="height:116px;">
+        <div class="logo-cell">
+            <img class="logo-img" src="../images/logo.png" alt="">
+        </div>
+        </div>
+        <div class="nav" id="nav">
+            <ul class="clearfix">
+                <li j-jump="index">
+                    <div class="nav-item-cell">
+                        <a>首页</a>
+                    </div>
+                </li>
+                <li j-jump="about">
+                    <div class="nav-item-cell">
+                        <a>关于我们</a>
+                    </div>
+                </li>
+                <li j-jump="project">
+                    <div class="nav-item-cell">
+                        <a>项目介绍</a>
+                    </div>
+                </li>
+                <li j-jump="application">
+                    <div class="nav-item-cell">
+                        <a>项目申请</a>
+                    </div>
+                </li>
+                <li j-jump="contribution">
+                    <div class="nav-item-cell">
+                        <a>我要捐款</a>
+                    </div>
+                </li>
+                <li j-jump="news">
+                    <div class="nav-item-cell">
+                        <a>新闻资讯</a>
+                    </div>
+                </li>
+                <li class="act" j-jump="concat">
+                    <div class="nav-item-cell">
+                        <a>联系我们</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <!-- 登录注册 -->
+        <div class="LoginRegist">
+            <div class="login-btn-cell">
+                <a href="javascript:;">登录 / 注册</a>
+            </div>
+        </div>
+    </div>
+    <!-- 轮播 -->
+    <div class="lunbobox" style="height:350px;">
+        <div class="lunbo1 xg" id="lbox">
+            <div class="swiper-container banner-container" style="width:100%;">
+                <div class="banner-swiper-pagination swiper-pagination" style="bottom: 40px;"></div>
+                <div class="swiper-wrapper banner-wrapper">
+                    <div class="swiper-slide banner-slide">
+                        <img src=" ../images/about_banner.png" alt="">
+                    </div>
+                    <div class="swiper-slide banner-slide">
+                        <img src=" ../images/about_banner.png" alt="">
+                    </div>
+                    <div class="swiper-slide banner-slide">
+                        <img src=" ../images/about_banner.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    <!-- 联系我们 -->
+    <div class="concats">
+         <div class="concats_title">
+             <span class="line_left"></span>
+             <span class="line_right"></span>
+             <h2>联系我们</h2>
+             <p>CONCAT US</p>
+             <span class="dot"></span>
+         </div>
+         <!-- 位置-->
+         <div class="location">
+             <!-- 地图 -->
+             <div id="allmap"></div>
+             <!-- 具体位置 -->
+             <div class="location_right">
+                    <ul id="us"> 
+                         <li><img src="../images/company_icon.png" alt=""><span></span></li>
+                         <li><img src="../images/phone_icon.png" alt=""> <span></span></li>
+                         <li><img src="../images/fax_icon.png" alt=""> <span></span></li>
+                         <li><img src="../images/wechat_icon.png" alt=""> <span></span></li>
+                         <li><img src="../images/address_icon.png" alt=""> <span></span></li>
+                    </ul>
+             </div>
+         </div>
+          <!-- 工程 -->
+          <div class="c_project">
+                <div class="word">
+
+                </div>
+                <div class="pic">
+                    <img src="../images/fenhuiP1.jpg" alt="">
+                </div>
+           </div>
+    </div>
+<!-- 底部 -->
+    <div class="footer" style="position:static;margin-top:0;">
+        <div class="footer_box clearfix">
+            <!-- 基金会大图 -->
+            <div class="foot_pic">
+                <img src="../images/logo_02.png" alt=""></div>
+                <!-- 网站菜单 -->
+                <div class="menu">
+                    <p>网站菜单</p>
+                    <ul>
+                        <li><a href="javascript:;" j-jump="about">关于我们</a></li>
+                        <li><a href="javascript:;" j-jump="news">新闻资讯</a></li>
+                        <li><a href="javascript:;" j-jump="project">项目介绍</a></li>
+                        <li><a href="javascript:;" j-jump="concat">加入我们</a></li>
+                        <li><a href="javascript:;" j-jump="concat">联系我们</a></li>
+                    </ul>
+                </div>
+                <div class="menu concat">
+                    <p>联系我们</p>
+                    <ul>
+                        <li><img src="../images/link_icon.png" alt=""><a href="javascript:;">HTTP://QILIB.581VV.COM/FUND/</a></li>
+                        <li><img src="../images/iphone_icon.png" alt=""><a href="javascript:;">010-56544125</a></li>
+                        <li><img src="../images/position.png" alt=""><a href="javascript:;">北京市东城区王府井东街8号  写字楼109室</a></li>
+                    </ul>
+                </div>
+                <div class="menu download">
+                    <p>相关下载</p>
+                    <ul>
+                        <li><a href="javascript:;">《申请人须知》</a></li>
+                        <li><a href="javascript:;">《基金会求助申请表》</a></li>
+                        <li class="concatway"><a href="javascript:;">联系我们</a><a href="javascript:;"><img src="../images/blog.png" alt=""><img src="../images/wechat.png" alt=""><img src="../images/qq.png" alt=""><img src="../images/email.png" alt=""></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!--底部结束 -->
+</body>
+<script>
+// 百度地图API功能
+    var map = new BMap.Map("allmap");
+	map.centerAndZoom(new BMap.Point(116.404, 39.915), 11);
+	var top_left_control = new BMap.ScaleControl({anchor: BMAP_ANCHOR_TOP_LEFT});// 左上角，添加比例尺
+	var top_left_navigation = new BMap.NavigationControl();  //左上角，添加默认缩放平移控件
+	var top_right_navigation = new BMap.NavigationControl({anchor: BMAP_ANCHOR_TOP_RIGHT, type: BMAP_NAVIGATION_CONTROL_SMALL}); //右上角，仅包含平移和缩放按钮
+    // 控件以及性比尺
+		map.addControl(top_left_control);        
+		map.addControl(top_left_navigation);     
+</script>
+
+<script>
+        $(function(){
+            //banner轮播
+            var bannerSwiper = new Swiper('.banner-container', {
+                autoplay: 10000, //可选选项，自动滑动
+                speed:1000,
+                pagination: '.banner-swiper-pagination',
+            });
+
+
+              //工程
+            var uss = document.getElementById('us');
+            var span = uss.getElementsByTagName('span');
+            var arry = [];
+            for(n in concatusinfo){
+                arry.push(concatusinfo[n]);
+            }
+            for(var i=0;i<span.length;i++){
+                span[i].innerHTML = arry[i];
+            }
+
+            var word = document.getElementsByClassName('word')[0];
+            var pv = document.createElement('p');
+            pv.innerHTML = concatusinfo.jianjie;
+            word.appendChild(pv);
+
+            // 图片
+
+        })
+
+
+    </script>
+</html>

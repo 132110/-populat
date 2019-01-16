@@ -1,0 +1,197 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.contributions{
+    width: 1260px;
+    margin: 0 auto;
+    margin-top: 35px;
+    margin-bottom: 25px !important;
+}
+.chead{
+    position: relative;
+    width: 100%;
+    text-align: center;
+}
+.chead h2{
+    margin: 0 auto;
+    width: 120px;
+    padding-bottom: 15px;
+}
+.chead p{
+    width: 370px;
+    position: absolute;
+    top: 17px;
+    border: 1px solid #b3c4cc;
+}
+.p1{
+    left: 170px;
+}
+.p2{
+    left: 695px;
+}
+.chead span{
+    color: #b3c4cc;
+
+    width: 120px;
+    text-align: center;
+}
+.chead .dot{
+    width: 7px;
+    height: 7px;
+    background: red;
+    margin:0 auto;
+    display: block;
+    margin-top: 15px;
+}
+.pay{
+    width: 1100px;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+.pay label{
+    display: inline-block;
+    color: #25292f;
+    margin:0 35px 50px 0;
+}
+.pay label span{
+    color: #fa4d1a;
+}
+.pay label input{
+    width: 420px;
+    height: 50px;
+    border: 1px solid #25292f;
+    border-radius: 5px;
+    /* height: 50px;
+    display: inline-block;
+    width: 420px;
+    border-radius: 5px;
+    border-color: #f3f1ee;
+    margin-left: 5px;
+    font-size: 14px; */
+}
+.pay label .adss{
+    width: 956px;
+}
+.cimage li{
+    float: left;
+    margin-left: 80px;
+    width: 168px;
+    height: 99px;
+    background:url("../images/contribution_bg.png");
+    border: 1px solid #e3e3e3;
+    text-align: center;
+    color: #a4a3a3;
+}
+.clearfloat:after{display:block;clear:both;content:"";visibility:hidden;height:0}
+.clearfloat{zoom:1}
+.cimage li p{
+    border-bottom: 1px solid #e3e3e3;
+    width: 140px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px 0 10px 0;
+}
+.cimage .mchoose{
+    background: url("../images/contribution_bg_hover.png");
+    color:#fae9d6 ;
+}
+.cimage .mchoose p{
+    border-bottom: 1px solid #efefef;
+    width: 140px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px 0 10px 0;
+}
+.cimage .mchoose .money{
+    color: #fff;
+}
+.money{
+    color: #fa8804;
+    font-weight: bold;
+    font-size: 21px;
+}
+.dshow{
+    color: #ff8a05;
+    padding-left: 140px;
+    padding-top: 50px;
+}
+.dshow input{
+    background: #f8f8f7;
+    border: 1px solid #f3f1ee;
+    width: 890px;
+    height: 55px;
+    display: inline-block;
+    color: #bfbdbb;
+    font-size: 14px;
+    text-indent: 1em;
+}
+.paymethod{
+    width: 1260px;
+    height: 330px;
+    border: 2px dotted #e5e5e5;
+    color: #a5a5a5;
+    text-align: center;
+    margin-top: 45px;
+}
+.paymethod span{
+    margin-top: 15px;
+    display: block;
+}
+.paymethod_box{
+    width: 1260px;
+    height: 300px;
+    clear: both;
+    margin: 0 auto;
+    z-index: 99;
+    margin-top: 45px;
+}
+.erweima,.zhifubao{
+    width: 50%;
+    float: left;
+}
+.erweima img{
+    vertical-align: middle;
+}
+.paymethod_box p{
+    text-align: center;
+    line-height: 25px;
+    vertical-align: middle;
+}
+.erweima p:nth-child(2){
+    width: 25%;
+    margin: 0 auto;
+    margin-top: 6px;
+}
+/* 支付宝 */
+.zhifubao p:nth-child(2){
+    background: #02abf0;
+    color: #fff;
+    font-size: 16px;
+    width: 25%;
+    margin: 0 auto;
+}
+/* 分割线 */
+.lines{
+    width: 1260px;
+    clear: both;
+    margin-top: 35px;
+    border: 1px solid #e1e1e1;
+}
+.submits{
+    width: 135px;
+    height: 45px;
+    margin:0 auto;
+    margin-top: 35px;
+}
+.submits .btn{
+    width:135px;
+    height: 45px;
+    text-align: center;
+    border-radius: 5px;
+    background: #fa9523;
+    color: #fff;
+    border: none;
+}

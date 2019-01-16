@@ -1,0 +1,147 @@
+
+*{ margin: 0; padding: 0; list-style: none;}
+.contributions{
+    width: 1260px;
+    margin: 0 auto;
+    margin-top: 35px;
+}
+.chead{
+    position: relative;
+    width: 100%;
+    text-align: center;
+}
+.chead h2{
+    margin: 0 auto;
+    width: 120px;
+    padding-bottom: 15px;
+}
+.chead p{
+    width: 370px;
+    position: absolute;
+    top: 17px;
+    border: 1px solid #b3c4cc;
+}
+.p1{
+    left: 170px;
+}
+.p2{
+    left: 695px;
+}
+.chead span{
+    color: #b3c4cc;
+
+    width: 120px;
+    text-align: center;
+}
+.chead .dot{
+    width: 7px;
+    height: 7px;
+    background: red;
+    margin:0 auto;
+    display: block;
+    margin-top: 15px;
+}
+.cooperate{
+    margin: 25px 280px;
+    width: 720px;
+    height: 61px;
+    position: relative;
+}
+.cooperate .picture{
+    display: inline-block;
+    width: 28px;
+    height: 28px;
+
+}
+.picture1{
+    background: url("../images/-person.png") 0 0 #ff6537;
+    background-size:contain;
+}
+.picture2{
+    background: url("../images/company.png") #ccc;
+    background-size:contain;
+}
+.picture3{
+    background: url("../images/group.png");
+    background-size:contain;
+}
+.cooperate .line{
+    display: inline-block;
+    border-top: 1px solid #ff6537;
+    width: 300px;
+    height: 14px;
+}
+.lang{
+    margin-top: 8px;
+    height: 21px;
+
+}
+.lang span{
+    color: #848381;
+    display: inline-block;
+
+}
+.lang .per{
+    color: #ff6537;
+    margin-left: -15px;
+}
+.lang .gonsi{
+    margin-left: 266px;
+}
+.lang .tuanti{
+    position: absolute;
+    left: 656px;
+}
+.mes{
+    border-bottom: 1px solid #e6e6e9;
+    width: 1130px;
+    margin: 0 auto;
+    height: 40px;
+    position: relative;
+}
+.mes p{
+    color: #2c2a2a;
+    display: inline-block;
+    margin-bottom: 2px;
+    line-height: 15px;
+    position: absolute;
+    left: 32px;
+    top: 8px;
+}
+.mes span{
+    display: inline-block;
+    width: 28px;
+    height: 28px;
+    background: url("../images/contactor.png");
+}
+.mesform span{
+    color: #fa4d1a;
+}
+.mesform input{
+    display: inline-block;
+    width: 865px;
+    border: 1px solid #e6e6e9;
+    border-radius: 5px;
+    height: 32px;
+    margin: 20px 0;
+}
+.mesform{
+    margin-left: 135px ;
+}
+.mesform .mesbtn{
+    color: #919191;
+    background: #f8f8f7;
+    width: 70px;
+    margin-left: 85px;
+    margin-top: -4px;
+}
+.mesform .btn{
+    width:135px;
+    height: 45px;
+    text-align: center;
+    border-radius: 5px;
+    background: #fa9523;
+    color: #fff;
+    border: none;
+    margin-left:450px;
+}
