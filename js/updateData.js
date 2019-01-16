@@ -29,7 +29,6 @@ parterAnimate = {
 			var end = that.page * that.pageSize;
 
 			for(var i = start;i <= end;i++){
-				console.log(that.oAnimateEle[i])
 				that.loadAnimate($(that.oAnimateEle[i]));
 			};
 
@@ -60,7 +59,7 @@ function updateprojectInfoFn(data){
 
 		sHtml += `
 					<div class="swiper-slide projectinfo-slide"">
-                    	<div class=" projectinfo-item">
+                    	<div class="projectinfo-item">
 	                        <div class="notice-img">
 	                            <img src="./images/${item.projectsrc}" alt="">
 	                        </div>
@@ -84,8 +83,11 @@ function updateprojectInfoFn(data){
         spaceBetween: 40,
         slidesPerGroup: 3, //每次滑动3个
         pagination: '.projectinfo-swiper-pagination',
+      
 
     });
+
+    
 
 };
 
@@ -118,6 +120,11 @@ function updateLoveHospitalFn(data){
         spaceBetween: 40,
         slidesPerGroup: 4, //每次滑动4个
         pagination: '.hosiptalshow-swiper-pagination',
+        onInit:function(){
+        	console.log($(".hosiptalshow-swiper-slide").length)
+
+        	gradualChange();
+        }
 
     });
 };
@@ -210,6 +217,58 @@ function updateParterDataFn(data){
 
 
 };
+
+
+
+function gradualChange(){
+	var arrys = [
+		{colorF:"#07d1d5",colorL:"#22dba2"},
+		{colorF:"#fed17c",colorL:"#fcb84d"},
+		{colorF:"#2dc4fd",colorL:"#6fa7fa"},
+		{colorF:"#75f4fd",colorL:"#7cb4ff"},
+		{colorF:"#07d1d5",colorL:"#22dba2"},
+		{colorF:"#fed17c",colorL:"#fcb84d"},
+		{colorF:"#2dc4fd",colorL:"#6fa7fa"},
+		{colorF:"#75f4fd",colorL:"#7cb4ff"},
+		{colorF:"#07d1d5",colorL:"#22dba2"},
+		{colorF:"#fed17c",colorL:"#fcb84d"},
+		{colorF:"#2dc4fd",colorL:"#6fa7fa"},
+		{colorF:"#75f4fd",colorL:"#7cb4ff"},
+		{colorF:"#07d1d5",colorL:"#22dba2"},
+		{colorF:"#fed17c",colorL:"#fcb84d"},
+		{colorF:"#2dc4fd",colorL:"#6fa7fa"},
+		{colorF:"#75f4fd",colorL:"#7cb4ff"},
+		{colorF:"#07d1d5",colorL:"#22dba2"},
+		{colorF:"#fed17c",colorL:"#fcb84d"},
+		{colorF:"#2dc4fd",colorL:"#6fa7fa"},
+		{colorF:"#75f4fd",colorL:"#7cb4ff"}
+	];
+
+
+
+	
+
+	$(".hosiptalshow .hosiptalshow-swiper-slide .j-money").each(function(index,item){
+
+		var index = randomFrom(0,arrys.length);
+
+		$(item).css({
+			"background-image":"-webkit-linear-gradient("+arrys[index].colorF+","+arrys[index].colorL+")",	
+		});
+
+	});
+
+
+
+};
+
+
+function randomFrom(min,max){
+
+ return Math.floor(Math.random() * (max - min + 1) + min);
+}
+
+
 
 
 

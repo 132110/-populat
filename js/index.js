@@ -55,15 +55,7 @@ $(function(){
     
     
 })
-$(function(){
-var arrys = [{colorF:"#07d1d5",colorL:"#22dba2"},{colorF:"#fed17c",colorL:"#fcb84d"},{colorF:"#2dc4fd",colorL:"#6fa7fa"},{colorF:"#75f4fd",colorL:"#7cb4ff"},{colorF:"#07d1d5",colorL:"#22dba2"},{colorF:"#fed17c",colorL:"#fcb84d"},{colorF:"#2dc4fd",colorL:"#6fa7fa"},{colorF:"#75f4fd",colorL:"#7cb4ff"},{colorF:"#07d1d5",colorL:"#22dba2"},{colorF:"#fed17c",colorL:"#fcb84d"},{colorF:"#2dc4fd",colorL:"#6fa7fa"},{colorF:"#75f4fd",colorL:"#7cb4ff"},{colorF:"#07d1d5",colorL:"#22dba2"},{colorF:"#fed17c",colorL:"#fcb84d"},{colorF:"#2dc4fd",colorL:"#6fa7fa"},{colorF:"#75f4fd",colorL:"#7cb4ff"},{colorF:"#07d1d5",colorL:"#22dba2"},{colorF:"#fed17c",colorL:"#fcb84d"},{colorF:"#2dc4fd",colorL:"#6fa7fa"},{colorF:"#75f4fd",colorL:"#7cb4ff"}];
-var allH = document.getElementsByClassName('j-money');
-for(var i=0;i<allH.length;i++){
-    //alert(1);
-    allH[i].style.backgroundClip = "text";
-    allH[i].style.background="linear-gradient("+arrys[i].colorF+", "+ arrys[i].colorL+")";
-}
-})
+
 
 
 

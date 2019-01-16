@@ -22,6 +22,38 @@ li {
     display: block;
     clear: both;
 }
+/*
+{colorF:"#07d1d5",colorL:"#22dba2"},
+    {colorF:"#fed17c",colorL:"#fcb84d"},
+    {colorF:"#2dc4fd",colorL:"#6fa7fa"},
+    {colorF:"#75f4fd",colorL:"#7cb4ff"},
+    {colorF:"#07d1d5",colorL:"#22dba2"},
+    {colorF:"#fed17c",colorL:"#fcb84d"},
+    {colorF:"#2dc4fd",colorL:"#6fa7fa"},
+    {colorF:"#75f4fd",colorL:"#7cb4ff"},
+    {colorF:"#07d1d5",colorL:"#22dba2"},
+    {colorF:"#fed17c",colorL:"#fcb84d"},
+    {colorF:"#2dc4fd",colorL:"#6fa7fa"},
+    {colorF:"#75f4fd",colorL:"#7cb4ff"},
+    {colorF:"#07d1d5",colorL:"#22dba2"},
+    {colorF:"#fed17c",colorL:"#fcb84d"},
+    {colorF:"#2dc4fd",colorL:"#6fa7fa"},
+    {colorF:"#75f4fd",colorL:"#7cb4ff"},
+    {colorF:"#07d1d5",colorL:"#22dba2"},
+    {colorF:"#fed17c",colorL:"#fcb84d"},
+    {colorF:"#2dc4fd",colorL:"#6fa7fa"},
+    {colorF:"#75f4fd",colorL:"#7cb4ff"}*/
+
+
+/*渐变开始*/
+.linear-gradient1{
+  -webkit-background-clip:text; 
+  -webkit-text-fill-color:transparent; 
+  background-image:linear-gradient(bottom,red,#fd8403,yellow);
+}
+
+/*渐变结束*/
+
 
 /* 头部 */
 .header{
@@ -189,6 +221,7 @@ li {
   transform:translate(-50%,0);
   bottom:50px;
   -webkit-background-clip: text;
+  -webkit-text-fill-color:transparent; 
 
 }
 .hosiptalshow .hosiptalshow-swiper-slide .time{
