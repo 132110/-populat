@@ -220,6 +220,7 @@ function updateParterDataFn(data){
 
 
 
+//修改爱心捐赠的金额渐变色
 function gradualChange(){
 	var arrys = [
 		{colorF:"#07d1d5",colorL:"#22dba2"},
@@ -244,16 +245,15 @@ function gradualChange(){
 		{colorF:"#75f4fd",colorL:"#7cb4ff"}
 	];
 
-
-
-	
-
 	$(".hosiptalshow .hosiptalshow-swiper-slide .j-money").each(function(index,item){
 
-		var index = randomFrom(0,arrys.length);
+		var i = randomFrom(0,arrys.length-1);
 
 		$(item).css({
-			"background-image":"-webkit-linear-gradient("+arrys[index].colorF+","+arrys[index].colorL+")",	
+			"background-image":"-webkit-linear-gradient("+arrys[i].colorF+","+arrys[i].colorL+")",
+			"background-image":"-o-linear-gradient("+arrys[i].colorF+","+arrys[i].colorL+")",
+			"background-image":"-moz-linear-gradient("+arrys[i].colorF+","+arrys[i].colorL+")",
+			"background-image":"linear-gradient("+arrys[i].colorF+","+arrys[i].colorL+")"
 		});
 
 	});

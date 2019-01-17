@@ -22,37 +22,7 @@ li {
     display: block;
     clear: both;
 }
-/*
-{colorF:"#07d1d5",colorL:"#22dba2"},
-    {colorF:"#fed17c",colorL:"#fcb84d"},
-    {colorF:"#2dc4fd",colorL:"#6fa7fa"},
-    {colorF:"#75f4fd",colorL:"#7cb4ff"},
-    {colorF:"#07d1d5",colorL:"#22dba2"},
-    {colorF:"#fed17c",colorL:"#fcb84d"},
-    {colorF:"#2dc4fd",colorL:"#6fa7fa"},
-    {colorF:"#75f4fd",colorL:"#7cb4ff"},
-    {colorF:"#07d1d5",colorL:"#22dba2"},
-    {colorF:"#fed17c",colorL:"#fcb84d"},
-    {colorF:"#2dc4fd",colorL:"#6fa7fa"},
-    {colorF:"#75f4fd",colorL:"#7cb4ff"},
-    {colorF:"#07d1d5",colorL:"#22dba2"},
-    {colorF:"#fed17c",colorL:"#fcb84d"},
-    {colorF:"#2dc4fd",colorL:"#6fa7fa"},
-    {colorF:"#75f4fd",colorL:"#7cb4ff"},
-    {colorF:"#07d1d5",colorL:"#22dba2"},
-    {colorF:"#fed17c",colorL:"#fcb84d"},
-    {colorF:"#2dc4fd",colorL:"#6fa7fa"},
-    {colorF:"#75f4fd",colorL:"#7cb4ff"}*/
 
-
-/*渐变开始*/
-.linear-gradient1{
-  -webkit-background-clip:text; 
-  -webkit-text-fill-color:transparent; 
-  background-image:linear-gradient(bottom,red,#fd8403,yellow);
-}
-
-/*渐变结束*/
 
 
 /* 头部 */
@@ -139,10 +109,17 @@ li {
 .lunbobox{
   height:88%;
 }
-.ja-all .swiper-pagination-bullet{
-  width: 8px !important;
-  height: 8px !important;
-    background: black !important;
+.ja-main .ja-whole-wp .ja-all .swiper-pagination-bullet{
+  width: 4px !important;
+  height: 4px !important;
+  background: black !important;
+  opacity:1;
+  margin:10px auto;
+}
+
+.ja-main .ja-whole-wp .ja-all .swiper-pagination-bullet.swiper-pagination-bullet-active{
+  width: 12px !important;
+  height: 12px !important;
 }
 /* .ja-all  span.swiper-pagination-bullet-active{
  width: 12px !important;
@@ -265,8 +242,6 @@ li {
   width: 1260px;
   margin: 0 auto;
   clear: both;
-  padding-top: 100px;
-  margin-top: 25px;
 }
 .money{
   width: 400px;
@@ -289,8 +264,6 @@ li {
   position: relative;
   height: 700px;
   clear: both;
-  margin-bottom: 35px;
-  margin-top: 35px;
 }
 h2{
   font-weight: normal;
@@ -409,10 +382,9 @@ h2{
 /* 最新资讯 */
 .information {
   width: 1260px;
-  height: 724px;
+  height: 700px;
   margin: 0 auto;
   overflow: hidden;
-  margin-bottom: 35px;
 }
 .information .information_title {
   padding-top:20px;
@@ -645,7 +617,7 @@ h2{
 /* 底部 */
 .footer{
   width: 100%;
-  height: 350px;
+  height: 280px;
   background: #0c0c0c;
   margin-top: 25px;
   position:absolute;
@@ -655,7 +627,7 @@ h2{
 .footer_box{
   width: 1260px;
   margin: 0 auto;
-  padding-top:55px;
+  padding-top:24px;
 }
 #part5{ 
   margin-top: 520px;
